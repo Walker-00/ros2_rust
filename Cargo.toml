@@ -1,0 +1,3 @@
+[workspace]
+members = ["turtlesim_controller"]
+resolver = "2"
