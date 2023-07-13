@@ -1,3 +1,9 @@
+<div align="center">
+
+[![Rust](https://github.com/Walker-00/ros2_rust/actions/workflows/rust.yml/badge.svg)](https://github.com/Walker-00/ros2_rust/actions/workflows/rust.yml)
+
+</div>
+
 # ros2_rust
 Just examples to get start with ros2 with rust
 
