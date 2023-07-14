@@ -12,7 +12,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     let mut node = Node::create(ctx, "node", "")?;
     let mut service = node.create_service::<AddTwoInts::Service>("/add_two_ints")?;
     let service_delayed = node.create_service::<AddTwoInts::Service>("/add_two_ints_delayed")?;
-    let client = node.create_client::<AddTwoInts::Service>("/add_two_ints_client")?;
+    let client = node.create_client::<AddTwoInts::Service>("/add_two_ints_delayed")?;
     let mut timer = node.create_wall_timer(Duration::from_millis(250))?;
     let mut timer2 = node.create_wall_timer(Duration::from_millis(2000))?;
 
