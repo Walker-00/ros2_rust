@@ -20,14 +20,18 @@ Just examples to get start with ros2 with rust
 ```
 $ just -l
 Available recipes:
-    controller # run turtlesim controller with rust
-    c          # alias for `controller`
-    service    # run turtlesim SetPen service client with rust
-    e          # alias for `service`
-    subscriber # run turtlesim pose subscriber with rust
-    s          # alias for `subscriber`
-    turtlesim  # run turtlesim with ros2
-    t          # alias for `turtlesim
+    addtwoints_client  # run addtwoints client with rust
+    ac                 # alias for `addtwoints_client`
+    addtwoints_service # run addtwoints service with rust
+    as                 # alias for `addtwoints_service`
+    controller         # run turtlesim controller with rust
+    c                  # alias for `controller`
+    subscriber         # run turtlesim pose subscriber with rust
+    s                  # alias for `subscriber`
+    turtlesim          # run turtlesim with ros2
+    t                  # alias for `turtlesim`
+    turtlesim_service  # run turtlesim SetPen service client with rust
+    ts                 # alias for `turtlesim_service`
 ```
 
 ### run turtlesim
@@ -51,7 +55,18 @@ $ just s # or just subscriber
 ### run turtlesim SetPen service client
 
 ```
-$ just e # or just service
+$ just ts # or just turtlesim_service
 ```
 
+### run addtwoints service client
+
+```
+$ just as # or just addtwoints_service
+```
+
+### run addtwoints service client
+
+```
+$ just ac # or just addtwoints_client
+```
 
