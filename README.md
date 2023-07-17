@@ -70,3 +70,17 @@ $ just as # or just addtwoints_service
 $ just ac # or just addtwoints_client
 ```
 
+### run ros_parameters
+
+```
+$ cargo run --bin ros_parameters -- --ros-args -p name:=[Linus, Walker] -p age:=15 -r __ns:=/namespace -r __node:=node
+```
+
+- we use `--ros-args` cli argument to add ros additional arguments
+- `-p` ros argument to specify the parameters of our program 
+- you can change the parameters by running this
+
+```
+$ ros2 param set /{namespace_name}/{node_name} {parameter}:={value} # ros2 param set /namespace/node name:=Walker
+```
+
