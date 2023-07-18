@@ -15,10 +15,10 @@ Just examples to get start with ros2 with rust
 
 # Tested
 
-<h3> All of the examples are tested with Ros2 Humble with Arch and Docker with Ubuntu lastest version.</h3>
-<h3> We use rust crate [r2r](https://docs.rs/r2r) for ros2 client.</h3>
-<h3> 'Cuz it's the best crate I've found.</h3>
-<h3> For now [r2r](https://docs.rs/r2r) only support for Ros2 [Foxy, Galactic and Humble] Versions I think. </h3>
+- All of the examples are tested with Ros2 Humble with Arch and Docker with Ubuntu lastest version.
+- We use rust crate [r2r](https://docs.rs/r2r) for ros2 client.
+- 'Cuz it's the best crate I've found.
+- For now [r2r](https://docs.rs/r2r) only support for Ros2 [Foxy, Galactic and Humble] Versions I think.
 
 # Usage
 
