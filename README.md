@@ -13,6 +13,13 @@ Just examples to get start with ros2 with rust
 - [Ros2 Foxy, Galactic or Humble](https://ros.org)
 - [just](https://github.com/casey/just)
 
+# Tested
+
+<h3> All of the examples are tested with Ros2 Humble with Arch and Docker with Ubuntu lastest version.</h3>
+<h3> We use rust crate [r2r](https://docs.rs/r2r) for ros2 client.</h3>
+<h3> 'Cuz it's the best crate I've found.</h3>
+<h3> For now [r2r](https://docs.rs/r2r) only support for Ros2 [Foxy, Galactic and Humble] Versions I think. </h3>
+
 # Usage
 
 ### help message
@@ -73,7 +80,7 @@ $ just ac # or just addtwoints_client
 ### run ros_parameters
 
 ```
-$ cargo run --bin ros_parameters -- --ros-args -p name:=[Linus, Walker] -p age:=15 -r __ns:=/namespace -r __node:=node
+$ cargo run --bin ros_parameters --release -- --ros-args -p name:=[Linus, Walker] -p age:=15 -r __ns:=/namespace -r __node:=node
 ```
 
 - we use `--ros-args` cli argument to add ros additional arguments
