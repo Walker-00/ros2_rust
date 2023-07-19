@@ -27,6 +27,8 @@ Just examples to get start with ros2 with rust
 ```
 $ just -l
 Available recipes:
+    action_server      # run action server with rust
+    aa                 # alias for `action_server`
     addtwoints_client  # run addtwoints client with rust
     ac                 # alias for `addtwoints_client`
     addtwoints_service # run addtwoints service with rust
@@ -77,7 +79,7 @@ $ just as # or just addtwoints_service
 $ just ac # or just addtwoints_client
 ```
 
-### run ros_parameters
+### run ros parameters
 
 ```
 $ cargo run --bin ros_parameters --release -- --ros-args -p name:=[Linus, Walker] -p age:=15 -r __ns:=/namespace -r __node:=node
@@ -89,5 +91,11 @@ $ cargo run --bin ros_parameters --release -- --ros-args -p name:=[Linus, Walker
 
 ```
 $ ros2 param set /{namespace_name}/{node_name} {parameter}:={value} # ros2 param set /namespace/node name:=Walker
+```
+
+### run action server
+
+```
+$ just aa # just action_server
 ```
 
