@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 futures = "0.3.28"
 r2r = "0.7.5"
+rand = "0.8.5"
