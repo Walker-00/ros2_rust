@@ -1,5 +1,5 @@
 [workspace]
-members = ["turtlesim_controller", "turtlesim_pose_subscriber", "turtlesim_setpen_service", "addtwoints_service", "addtwoints_client", "ros_parameters"]
+members = ["turtlesim_controller", "turtlesim_pose_subscriber", "turtlesim_setpen_service", "addtwoints_service", "addtwoints_client", "ros_parameters", "action_server"]
 resolver = "2"
 
 [profile.release]
