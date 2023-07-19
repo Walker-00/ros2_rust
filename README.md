@@ -27,6 +27,8 @@ Just examples to get start with ros2 with rust
 ```
 $ just -l
 Available recipes:
+    action_client      # run action client with rust
+    ca                 # alias for `action_client`
     action_server      # run action server with rust
     aa                 # alias for `action_server`
     addtwoints_client  # run addtwoints client with rust
@@ -97,5 +99,11 @@ $ ros2 param set /{namespace_name}/{node_name} {parameter}:={value} # ros2 param
 
 ```
 $ just aa # just action_server
+```
+
+### run action client
+
+```
+$ just ca # just action_client
 ```
 
