@@ -2,6 +2,7 @@ alias c := controller
 alias s := subscriber
 alias ts := turtlesim_service
 alias aa := action_server
+alias ca := action_client
 alias t := turtlesim
 alias as := addtwoints_service
 alias ac := addtwoints_client
@@ -33,3 +34,7 @@ addtwoints_client:
 # run action server with rust
 action_server:
   cargo run --bin action_server --release
+
+# run action client with rust
+action_client:
+  cargo run --bin action_client --release
